@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.animation-pulse {
+    /*box-shadow: 0 0 0 20px rgba(229,62,62, 0.5);
+    transform: scale(0.8);*/
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 5px 0px rgba(78, 220, 216, 0.6);
+}
+100% {
+    box-shadow: 0 0 5px 20px rgba(78, 220, 216, 0);
+}
+}
