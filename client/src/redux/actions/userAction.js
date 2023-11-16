@@ -20,7 +20,9 @@ const userLoginAction = (email, password) => async (getState, dispatch) => {
       password,
     });
     dispatch({ type: LOGIN_SUCCESS, payload: data });
-    localStorage.getItem("UserInfo", JSON.stringify(data));
+    localStorage.setItem("userInfo", JSON.stringify(data));
+   
+    // console.log(data)
   } catch (error) {
     dispatch({ type: LOGIN_FAILED, payload: error.message });
   }

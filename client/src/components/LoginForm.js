@@ -17,12 +17,14 @@ function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const handleClick=()=>{navigate('/register')}
-  const UserInfo = useSelector((state) => state.userLoginAction);
-  useEffect(() => {
-    if (UserInfo) {
-      navigate("/");
-    }
-  }, [navigate, UserInfo]);
+   const userInfo = useSelector((state) => state.login);
+// const {userInfo}=userInfoObj
+useEffect(() => {
+  console.log("userInfo",userInfo)
+  if (userInfo) {
+    navigate("/login");
+  }
+}, [navigate, userInfo]);
   const submitHandler=(e)=>{
 e.preventDefault()
 if(email!=='' && password!=='')

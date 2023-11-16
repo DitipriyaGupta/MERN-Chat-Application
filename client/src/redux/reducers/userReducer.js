@@ -10,17 +10,17 @@ import {
 const initialState = {
   isLoading: false,
   error: null,
-  UserInfo: null,
+  userInfo: null,
 };
 
 // login reducer
 
-const userLoginReducer = (state = initialState, action) => {
+const userLoginReducer = (state =initialState, action) => {
   switch (action.type) {
     case LOGIN_REQUEST:
       return { ...state, isLoading: true };
     case LOGIN_SUCCESS:
-      return { ...state, isLoading: false, UserInfo: action.payload };
+      return {...state,  isLoading: false, userInfo: action.payload };
     case LOGIN_FAILED:
       return { ...state, error: action.payload };
     case LOGOUT:
@@ -37,7 +37,7 @@ const userRegisterReducer = (state = initialState, action) => {
     case REGISTER_REQUEST:
       return { ...state, isLoading: true };
     case REGISTER_SUCCESS:
-      return { ...state, isLoading: false, UserInfo: action.payload };
+      return { ...state, isLoading: false, userInfo: action.payload };
     case REGISTER_FAILED:
       return { ...state, error: action.payload };
     default:
