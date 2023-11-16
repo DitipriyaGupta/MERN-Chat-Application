@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import GetStarted from "./components/GetStarted";
 import LoginForm from "./components/LoginForm";

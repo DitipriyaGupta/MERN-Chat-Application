@@ -62,7 +62,6 @@ function RegisterForm() {
              
             </span>
             <input
-              ref={inputRef}
               type="Email"
               name="q"
               className="w-full max-w-xs py-2 text-sm text-white border-b bg-black pl-10 focus:outline-none focus:bg-black focus:border-sky-400 focus:text-gray-500"
