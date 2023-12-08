@@ -5,26 +5,26 @@ function GetStarted() {
   const navigate=useNavigate();
   const handleClick = () => navigate('/login');
   return (
-    <div class="min-h-screen bg-black flex flex-col justify-center py-12 px-6 lg:px-8">
-      <div class="sm:mx-auto sm:w-full sm:max-w-md">
-        <h1 class="mt-6 text-center text-3xl font-extrabold text-white">
+    <div className="min-h-screen bg-black flex flex-col justify-center py-12 px-6 lg:px-8">
+      <div className="sm:mx-auto sm:w-full sm:max-w-md">
+        <h1 className="mt-6 text-center text-3xl font-extrabold text-white">
           Welcome to Talkie
         </h1>
-        <p class="mt-2 text-center text-sm text-gray-400 max-w">
+        <p className="mt-2 text-center text-sm text-gray-400 max-w">
           Where Conversations Come to Life! 🗨️💬
         </p>
-        <img class="mx-auto mt-4 h-48 w-auto" src={Started} alt="Workflow" />
-        <p class="mt-2 text-center text-sm text-gray-400 max-w">
+        <img className="mx-auto mt-4 h-48 w-auto" src={Started} alt="Workflow" />
+        <p className="mt-2 text-center text-sm text-gray-400 max-w">
           Start Talking Now!
         </p>
-        <div class="bg-black">
-          <div class="flex justify-center items-center">
+        <div className="bg-black">
+          <div className="flex justify-center items-center">
             <button onClick={handleClick}
               type="submit"
-              class="h-14 w-14 mt-9 bg-sky-400 rounded-full flex justify-center items-center animation-pulse  text-center"
+              className="h-14 w-14 mt-9 bg-sky-400 rounded-full flex justify-center items-center animation-pulse  text-center"
             >
               <svg
-                class="w-5 h-5 text-gray-800 dark:text-white  item-center "
+                className="w-5 h-5 text-gray-800 dark:text-white  item-center "
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg "
                 fill="none"

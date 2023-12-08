@@ -15,3 +15,9 @@
     box-shadow: 0 0 5px 20px rgba(78, 220, 216, 0);
 }
 }
+/* Add this to your stylesheet or Tailwind CSS configuration */
+.border-gradient {
+    border-image: linear-gradient(to right, #3b82f6, #10b981);
+    border-image-slice: 1;
+  }
+  

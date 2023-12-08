@@ -11,7 +11,7 @@ import {
 import axios from 'axios'
   const API_URL = "http://localhost:4000";
 // login action
-const userLoginAction = (email, password) => async (getState, dispatch) => {
+const userLoginAction = (email, password) => async ( dispatch,getState) => {
 
   try {
     dispatch({ type: LOGIN_REQUEST });
